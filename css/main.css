@@ -54,6 +54,7 @@ header {
 	margin: 0 auto;
 	text-align: center;
 	text-transform: uppercase;
+	width: 100%;
 }
 
 header h1 {
@@ -97,10 +98,9 @@ header nav ul li a {
 
 .top-section, .bottom-section {
 	align-items: center;
-	clear:both;
-	display: center;
+	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
-	margin: 0 auto;
 }
 
 .main-image {
@@ -179,10 +179,44 @@ footer span {
 	text-transform: lowercase;
 }
 
-@media all and (min-width: 765px){
+@media all and (min-width: 765px) {
+	.bottom-section {
+		align-items: flex-start;
+		border-top: 1px solid #eee;
+		justify-content: space-between;
+	}
+	.section-one, .section-two, .section-three {
+		border-top: none;
+		flex-basis: 30%
+	}
 
-	
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	}
 }
 
-@media all and (min-width: 1200px){
+@media all and (min-width: 1200px) {
+	header {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	header h1 {
+		border: 0;
+		padding: 38px 20px 20px 0px;
+		text-align: left;
+		width: 50%;
+	}
+
+	header nav {
+		text-align: right;
+		width: 50%;
+	}
+
+
+	header nav ul li {
+		display: inline-block;
+	}
 }
