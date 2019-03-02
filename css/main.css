@@ -202,6 +202,11 @@ footer span {
 		flex-basis: 30%
 	}
 
+	.address {
+		float: left;
+		width: 50%;
+	}
+
 	.section-two {
 		border-left: 1px solid #eee;
 		border-right: 1px solid #eee;
@@ -210,6 +215,11 @@ footer span {
 
 	.gallery-photo {
 		width: 30%;
+	}
+
+	.main-title iframe {
+		float: right;
+		width: 50%;
 	}
 }
 
