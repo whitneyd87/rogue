@@ -1,12 +1,12 @@
 /***** BASE STYLES *****/
 
-@font-face {
-	font-family: 'Wisdom Script';
-	src: url('../fonts/wisdom-script.otf') format('opentype');
-}
-
 html {
 	font-size: 16px;
+}
+
+@font-face {
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdomscript.otf') format('opentype');
 }
 
 body {
@@ -14,8 +14,7 @@ body {
 	display: flex;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
-	justify-content: center;
-	
+	justify-content: center;	
 }
 
 
@@ -26,8 +25,8 @@ body {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: 0 auto;
-	width: 1200px;
+	max-width: 1200px;
+	width: 90%;
 }
 
 
@@ -40,44 +39,30 @@ h1, h2, h3, h4 {
 	text-transform: uppercase;
 }
 
-h1 {
-	font-size: 1.875em;
-}
-
-h2 {
-	font-size: 1.5em;
-}
-
-h3 {
-	font-size: 1.12em;
-}
-
-h4 {
-	font-size: 0.75em;
-}
-
 p {
-	font-size: 0.875em;
+	font-size: 1em;
 	line-height: 21px;
-	padding: 0 30px;
 }
 
 /***** HEADER *****/
 
 header {
 	align-items: center;
-	border-bottom: 3px double #77a466;
 	display: flex;
-	height: 80px;
-	justify-content: space-between;
+	flex-flow: row wrap;
+	font-size: 2.2em;
+	justify-content: center;
 	margin: 0 auto;
-	width: 100%
+	text-align: center;
+	text-transform: uppercase;
 }
 
 header h1 {
+	border-bottom: 3px double #77a466;
 	float: left;
 	margin: 0;
-	padding: 38px 0;
+	padding: 100px 50px 50px 50px;
+	width: 100%
 }
 
 
@@ -87,7 +72,8 @@ header h1 span {
 
 header nav {
 	float: right;
-	padding: 46px 0;
+	padding: 50px 0;
+	width: 100%
 }
 
 header nav ul {
@@ -96,12 +82,11 @@ header nav ul {
 }
 
 header nav ul li {
-	display: inline;
-	font-size: 14px;
+	display: list-item;
+	font-size: .875em;
 	font-weight: 700;
-	text-transform: uppercase;
-	padding: 0 10px;
-	
+	list-style: none;
+	padding: 20px;	
 }
 
 header nav ul li a {
@@ -126,6 +111,8 @@ header nav ul li a {
 
 .main-image img {
 	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+	width: 100%
 }
 
 .main-title {
@@ -135,13 +122,14 @@ header nav ul li a {
 
 .main-title h3 {
 	color: #77a466;
+	font-size: 1.5em;
 	padding: 5px 0;
 	text-align: left;
 }
 
 .main-title p {
 	font-size: 1em;
-	line-height: 25px;
+	line-height: 2;
 	padding: 0;
 }
 
@@ -149,17 +137,13 @@ header nav ul li a {
 	border-top: 1px solid #eee;
 	float: left;
 	height: auto;
-	width:399px;
+	width: 100%;
 }
 
 .section-one h4 {
-	padding: 10px, 0;
+	padding: 10px 0;
 }
 
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
 
 .section-two h4, .section-three h4 {
 	padding: 10px 30px;
@@ -173,18 +157,19 @@ header nav ul li a {
 
 .menu li {
 	color:#77a466;
+	line-height: 3;
 	padding: 10px 0;
 }
 
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 21px;
+	line-height: 2.5;
 }
 
 .address {
 	font-size: 1em;
-	line-height: 24px;
+	line-height: 2.5;
  }
 /***** FOOTER *****/
 
@@ -193,10 +178,11 @@ footer {
 	border-top: 3px solid #eee;
 	clear: both;
 	display: flex;
-	height: 50px;
+	height: 4.16%;
 	justify-content: center;
 	margin: 0 auto;
 	text-align: center;	
+	width: 100%
 }
 
 footer span {
@@ -204,4 +190,12 @@ footer span {
 	font-family: 'Wisdom Script', cursive;
 	font-size: 0.875em;
 	text-transform: lowercase;
+}
+
+@media all and (min-width: 765px){
+
+	
+}
+
+@media all and (min-width: 1200px){
 }
