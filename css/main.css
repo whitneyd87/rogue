@@ -101,6 +101,7 @@ header nav ul li a {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	overflow: auto;
 }
 
 .main-image {
@@ -117,6 +118,7 @@ header nav ul li a {
 .main-title {
 	float: left;
 	height: auto;
+	width: 100%;
 }
 
 .main-title h3 {
@@ -159,6 +161,16 @@ header nav ul li a {
 	font-size: 1em;
 	line-height: 1.5;
  }
+
+.gallery-photo {
+	margin: 1.66%;
+	float: left;
+	height: auto;
+	overflow: auto;
+	width: 100%;
+}
+
+
 /***** FOOTER *****/
 
 footer {
@@ -195,6 +207,10 @@ footer span {
 		border-right: 1px solid #eee;
 		padding: 0 20px;
 	}
+
+	.gallery-photo {
+		width: 30%;
+	}
 }
 
 @media all and (min-width: 1200px) {
@@ -211,6 +227,7 @@ footer span {
 	}
 
 	header nav {
+		padding: 38px 0px 20px 0px;
 		text-align: right;
 		width: 50%;
 	}
@@ -218,5 +235,18 @@ footer span {
 
 	header nav ul li {
 		display: inline-block;
+	}
+
+	.main-title p {
+		float:left;
+	}
+
+	.main-title iframe {
+		float: right;
+		width: 50%;
+	}
+
+	.gallery-photo {
+		width: 30%;
 	}
 }
