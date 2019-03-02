@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
 }
 
 p {
-	font-size: 1em;
+	font-size: .875em;
 	line-height: 21px;
 }
 
@@ -50,7 +50,6 @@ header {
 	align-items: center;
 	display: flex;
 	flex-flow: row wrap;
-	font-size: 2.2em;
 	justify-content: center;
 	margin: 0 auto;
 	text-align: center;
@@ -58,10 +57,11 @@ header {
 }
 
 header h1 {
-	border-bottom: 3px double #77a466;
+	border-bottom: 3px solid #77a466;
 	float: left;
+	font-size: 1.875em;
 	margin: 0;
-	padding: 100px 50px 50px 50px;
+	padding: 38px 20px 20px 20px;
 	width: 100%
 }
 
@@ -71,8 +71,7 @@ header h1 span {
 }
 
 header nav {
-	float: right;
-	padding: 50px 0;
+	padding: 20px 0;
 	width: 100%
 }
 
@@ -86,7 +85,7 @@ header nav ul li {
 	font-size: .875em;
 	font-weight: 700;
 	list-style: none;
-	padding: 20px;	
+	padding: 10px;	
 }
 
 header nav ul li a {
@@ -101,7 +100,7 @@ header nav ul li a {
 	clear:both;
 	display: center;
 	justify-content: center;
-	margin: 0, auto;
+	margin: 0 auto;
 }
 
 .main-image {
@@ -122,14 +121,14 @@ header nav ul li a {
 
 .main-title h3 {
 	color: #77a466;
-	font-size: 1.5em;
+	font-size: 1.125em;
 	padding: 5px 0;
 	text-align: left;
 }
 
 .main-title p {
 	font-size: 1em;
-	line-height: 2;
+	line-height: 1.5625;
 	padding: 0;
 }
 
@@ -140,15 +139,6 @@ header nav ul li a {
 	width: 100%;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
-
-
-.section-two h4, .section-three h4 {
-	padding: 10px 30px;
-}
-
 .menu {
 	font-size: 1em;
 	list-style: none;
@@ -157,19 +147,17 @@ header nav ul li a {
 
 .menu li {
 	color:#77a466;
-	line-height: 3;
 	padding: 10px 0;
 }
 
 .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 2.5;
 }
 
 .address {
 	font-size: 1em;
-	line-height: 2.5;
+	line-height: 1.5;
  }
 /***** FOOTER *****/
 
@@ -178,7 +166,6 @@ footer {
 	border-top: 3px solid #eee;
 	clear: both;
 	display: flex;
-	height: 4.16%;
 	justify-content: center;
 	margin: 0 auto;
 	text-align: center;	
